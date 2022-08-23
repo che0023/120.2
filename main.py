@@ -48,7 +48,7 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 da,wea, temperature, highest, lowest = get_weather()
-data = {"date": {"vlue":da,"color":get_random_color()},
+data = {"date": {"value":da,"color":get_random_color()},
         "weather":{"value":wea,"color":get_random_color()},
         "temperature":{"value":temperature,"color":get_random_color()},
         "love_days":{"value":get_count(),"color":get_random_color()},
